@@ -31,21 +31,9 @@ namespace OddEvenNumersApp
             Console.WriteLine();
         }
 
-        static bool IsEven(int numbers)
-        {
-            if (numbers % 2 == 0)
-                return true;
-            else
-                return false;
-        }
+        static bool IsEven(int numbers) => numbers % 2 == 0;
 
-        static bool IsOdd(int numbers)
-        {
-            if (numbers % 2 != 0)
-                return true;
-            else
-                return false;
-        }
+        static bool IsOdd(int numbers) => !IsEven(numbers);
 
     }
 }
